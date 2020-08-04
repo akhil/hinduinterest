@@ -11,6 +11,7 @@
     "gatsby-plugin-offline": "^3.2.21",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.24",
+    "gatsby-source-contentful": "^2.3.34",
     "gatsby-source-filesystem": "^2.3.23",
     "gatsby-transformer-sharp": "^2.5.12",
     "prop-types": "^15.7.2",
@@ -19,6 +20,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -27,7 +29,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
